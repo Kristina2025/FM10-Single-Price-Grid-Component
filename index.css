@@ -32,14 +32,13 @@ body {
   border-radius: 8px;
 }
 
-.section__one {
+.component__heading {
   padding: 2.125rem 2.3rem;
-  overflow: none;
   background-color: var(--color-white);
   border-radius: 8px 8px 0 0;
 }
 
-.component__heading {
+.component__heading-title {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.15;
@@ -47,7 +46,7 @@ body {
   color: var(--color-teal-500);
 }
 
-.section__one-subheading {
+.component__heading-subtitle {
   margin-top: 1.5rem;
   font-size: 1.125rem;
   font-weight: 700;
@@ -56,7 +55,7 @@ body {
   color: var(--color-green-400);
 }
 
-.section__one-description {
+.component__heading-description {
   margin-top: 0.5rem;
   font-size: 1rem;
   font-weight: 400;
@@ -65,25 +64,25 @@ body {
   color: var(--color-gray-500);
 }
 
-.section__two {
+.component__data {
   display: flex;
   flex-direction: column;
 }
 
-.section__two__one {
+.component__price {
   padding: 1.5rem 2.3rem;
   background-color: var(--color-teal-500);
   color: var(--color-white);
 }
 
-.section__two__one-heading {
+.component__price-title {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.25px;
 }
 
-.price {
+.component__price-info {
   margin-top: 1rem;
   display: flex;
   justify-content: start;
@@ -91,14 +90,14 @@ body {
   gap: 0.5rem;
 }
 
-.price-qty {
+.component__price-amount {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.4px;
 }
 
-.price-info {
+.component__price-type {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.65;
@@ -106,14 +105,14 @@ body {
   color: hsla(0, 0%, 100%, 0.5);
 }
 
-.section__two__one-description {
+.component__price-description {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.65;
   letter-spacing: -0.5px;
 }
 
-.component__btn {
+.component__price-link {
   margin-top: 1.813rem;
   display: block;
   width: 100%;
@@ -130,21 +129,21 @@ body {
   text-align: center;
 }
 
-.section__two__two {
+.component__features {
   padding: 1.5rem 2.25rem;
   background-color: var(--color-teal-400);
   border-radius: 0 0 8px 8px;
   color: var(--color-white);
 }
 
-.section__two__two-subheading {
+.component__features-title {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.25px;
 }
 
-.section__two__two-description {
+.component__features-list {
   margin-top: 1rem;
   font-size: 0.875rem;
   font-weight: 400;
@@ -162,22 +161,22 @@ body {
     box-shadow: 0px 15px 30px 0px hsla(212, 100%, 34%, 0.15);
   }
 
-  .section__one {
+  .component__heading {
     padding: 2.5rem 2.5rem 2.688rem 2.5rem;
   }
 
-  .section__two {
+  .component__data {
     flex-direction: row;
   }
 
-  .section__two__one {
+  .component__price {
+    flex: 1;
     padding: 2.563rem 2.5rem;
-    flex-basis: 50%;
     border-radius: 0 0 0 8px;
   }
 
-  .section__two__two {
-    flex-basis: 50%;
+  .component__features {
+    flex: 1;
     padding: 2.563rem 2.5rem;
     border-radius: 0 0 8px 0;
   }
