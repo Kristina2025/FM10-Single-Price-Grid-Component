@@ -8,9 +8,9 @@
 
 :root {
   --color-teal-500: hsl(179, 62%, 43%);
-  --color-green-400: hsl(71, 73%, 54%);
+  --color-green-400: rgb(192, 223, 52);
   --color-teal-100: hsl(204, 43%, 93%);
-  --color-teal-400: hsl(179, 48%, 52%);
+  --color-teal-400: rgb(74, 191, 189);
   --color-gray-500: hsl(218, 22%, 67%);
   --color-white: hsl(0, 0%, 100%);
 }
@@ -102,7 +102,7 @@ body {
   font-weight: 400;
   line-height: 1.65;
   letter-spacing: -0.5px;
-  color: hsla(0, 0%, 100%, 0.5);
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 .component__price-description {
@@ -112,14 +112,14 @@ body {
   letter-spacing: -0.5px;
 }
 
-.component__price-link {
+.component__price-btn {
   margin-top: 1.813rem;
   display: block;
   width: 100%;
   padding: 0.77rem;
   background-color: var(--color-green-400);
   color: var(--color-white);
-  text-decoration: none;
+  border: 2px solid var(--color-green-400);
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 700;
@@ -127,6 +127,13 @@ body {
   letter-spacing: -0.25px;
   box-shadow: 0px 10px 10px 0px hsla(0, 0%, 0%, 0.1);
   text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.component__price-btn:hover,
+.component__price:focus-visible {
+  transform: scale(1.02);
 }
 
 .component__features {
